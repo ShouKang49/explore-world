@@ -199,6 +199,7 @@ section h2, section p {
 .menu-toggle {
     display: none;
     cursor: pointer;
+    right: 0;
 }
 
 @media only screen and (max-width: 768px) {
@@ -232,18 +233,28 @@ section h2, section p {
         display: none;
     }
 
-    .main-menu ul {
-        display: none;
-        /* Additional styles */
+    .main-menu ul li{
+        display: block;
     }
 
     .menu-toggle {
         display: block;
     }
 
-    /* Show the navigation when the menu toggle is clicked */
     .menu-toggle.active + ul {
         display: block;
     }
+
+    .main-menu ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: lightblue; 
+        border: 1px solid black; 
+        padding: 10px 0;
+    }
+
 
 }
