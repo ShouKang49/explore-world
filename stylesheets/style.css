@@ -196,6 +196,11 @@ section h2, section p {
     font-weight: bold;
 }
 
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
 @media only screen and (max-width: 768px) {
     .article{
         display: block;
@@ -225,6 +230,20 @@ section h2, section p {
 
     #video-BG{
         display: none;
+    }
+
+    .main-menu ul {
+        display: none;
+        /* Additional styles */
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    /* Show the navigation when the menu toggle is clicked */
+    .menu-toggle.active + ul {
+        display: block;
     }
 
 }
