@@ -193,13 +193,6 @@ section h2, section p {
     font-weight: bold;
 }
 
-.toggle-menu{
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    right: 0;
-}
-
 @media only screen and (max-width: 768px) {
     .article{
         display: block;
@@ -214,28 +207,6 @@ section h2, section p {
         margin-top: 3%;
         font-weight: bold;
         width: 100%;
-    }
-
-    .main-menu ul{
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        left: 0;
-    }
-    .main-menu ul.active {
-        display: flex;
-    }
-
-    .main-menu li {
-        margin: 0;
-        text-align: center;
-    }
-    .toggle-menu {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        background-color: lightblue;
-        border: none;
     }
 
 }
